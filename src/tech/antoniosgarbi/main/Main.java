@@ -1,0 +1,12 @@
+package tech.antoniosgarbi.main;
+
+import tech.antoniosgarbi.Computer;
+import tech.antoniosgarbi.ComputerPart;
+import tech.antoniosgarbi.ComputerPartDisplayVisitor;
+
+public class Main {
+    public static void main(String[] args) {
+        ComputerPart computer = new Computer();
+        computer.accept(new ComputerPartDisplayVisitor());
+    }
+}
